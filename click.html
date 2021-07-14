@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function myfunc()
+            {
+                var ret=document.title;
+                alert("document title:"+ret);
+
+                var ret=document.URL;
+                alert("document title:"+ret);
+
+                var ret=document.forms[0];
+                alert("document title:"+ret);
+
+                var ret=document.forms[0].elements[1];
+                alert("document title:"+ret);
+            }
+
+        </script>
+        </head>
+        <body>
+            <h1 id="title">this is main title</h1>
+            <p>click the following to see the result</p>
+
+
+            <form name="firstform">
+                <input type="button" value="click me" onclick="myfunc();">
+                <input type="button" value="cancel">
+                </form>
+
+                <form name="secondform">
+                    <input type="button" value="dont click">
+                    </form>
+                </body>
+                </html>
